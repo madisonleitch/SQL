@@ -1,0 +1,34 @@
+# SQL
+SQL Portfolio
+
+- Create a Clothing Store Database
+
+CREATE TABLE store (id INTEGER, item TEXT, price INTEGER, aisle INTEGER, quantity INTEGER, color TEXT);
+
+INSERT INTO store VALUES (1,"shirt", 15, 2, 30, "pink");
+INSERT INTO store VALUES (2, "pants", 30, 3, 30, "blue");
+INSERT INTO store VALUES (3, "hats", 15, 3, 45, "black");
+INSERT INTO store VALUES (4, "cookies", 5, 3, 17, "brown");
+INSERT INTO store VALUES (5, "belt", 12, 5, 15, "black");
+INSERT INTO store VALUES (6, "socks", 6, 6, 40, "white");
+INSERT INTO store VALUES (7, "tank tops", 7, 7, 40, "white");
+INSERT INTO store VALUES (8, "underwear", 20, 7, 40, "black");
+INSERT INTO store VALUES (9, "earrings", 3, 9, 50, "gold");
+INSERT INTO store VALUES (10, "rings", 5, 9, 50, "silver");
+INSERT INTO store VALUES (11, "shoes", 40, 9, 50, "black");
+INSERT INTO store VALUES (12, "dresses", 40, 9, 50, "rose gold");
+INSERT INTO store VALUES (13, "phone case", 20, 11, 50, "purple");
+INSERT INTO store VALUES (14, "hair ties", 3, 11, 150, "black");
+INSERT INTO store VALUES (15, "lip gloss", 35, 11, 50, "pink");
+
+
+-display database order by price
+SELECT * from store ORDER BY price;
+
+
+- What items are most affordable, with prices less than 15$.
+SELECT * from store Where price < 15 order by price;
+
+
+- What items have the most available stock?
+SELECT* from store ORDER BY quantity;
